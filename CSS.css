@@ -1,0 +1,198 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+html {
+box-sizing: border-box;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#menu a.active {
+  border-bottom: 2px solid red;
+  border-top: 2px solid red;
+  color: red;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#menu a:hover {
+  color: white;
+}
+
+nav {
+  text-decoration-style: none; /*delete the under line for links menu*/
+  width: 70%;
+  margin: 20px auto;
+
+}
+
+
+ul {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+ul li {
+  background-color: transparent;
+  font-weight: 10;
+  font-size: 28px;
+  text-align: center;
+  width: 16.6%;
+  padding: 10px;
+
+}
+
+ul li a {
+  color: #000;
+  text-decoration: none;
+  padding: 16px 32px;
+  cursor: pointer;
+  border-radius: 15px 50px 30px;
+  
+}
+
+/* hover-transition for menu */
+ul li :hover {
+  background-color: indianred;
+ transition: background .5s ease-in;
+
+}
+body {
+  height: 500px;
+  background-image: url(./Images/HomeImage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Ensemble word */
+
+.text-blur-out {
+	-webkit-animation: text-blur-out 2.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-blur-out 2.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+/* ----------------------------------------------
+ * animation text-blur-out
+ * ----------------------------------------
+ */
+ @-webkit-keyframes text-blur-out {
+  0% {
+    -webkit-filter: blur(0.01);
+            filter: blur(0.01);
+  }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+            filter: blur(12px) opacity(0%);
+  }
+}
+@keyframes text-blur-out {
+  0% {
+    -webkit-filter: blur(0.01);
+            filter: blur(0.01);
+  }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+            filter: blur(12px) opacity(0%);
+  }
+}
+
+
+
+
+
+.main {
+  position: relative
+}
+
+.hero-text {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 600%;
+}
+
+
+.hero-text {
+  text-shadow: 5px -10px 5px gray;
+  font-weight: 800;
+}
+
+.l1 {
+  color: red;
+  font-size: 2em;
+  text-shadow: 10px -20px 5px pink;
+  font-weight: 800;
+}
+
+section {
+  padding: 2em 0;
+  border-bottom: solid 1px #ccc;
+  margin-bottom: 4em;
+}
+.box {
+  position: absolute;
+
+  width: 100px;
+  height: 100px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: initial;
+}
+
+#one {
+  top: 70px;
+  left: 5px;
+  color: #fff;
+}
+
+#two {
+  top: 70px;
+  right: 5px;
+  color: white;
+}
+#three {
+  top: 180px;
+  left: 5px;
+  color: #fff;
+}
+
+#four {
+  top: 180px;
+  right: 5px;
+  color: white;
+}
+#five {
+  bottom: 140px;
+  left: 5px;
+  color: white;
+}
+#six {
+  bottom: 140px;
+  right: 5px;
+  color: white;
+}
+#seven {
+  bottom: 5px;
+  left: 5px;
+  color: white;
+}
+#eight {
+  bottom: 5px;
+  right: 5px;
+  color: white;
+}
+
+#seven:hover {
+  transition-delay: 1s, 250ms;
+  transition-property: margin-right, color;
+}
