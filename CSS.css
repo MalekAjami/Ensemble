@@ -62,7 +62,7 @@ ul li :hover {
 
 }
 body {
-  height: 500px;
+  min-height: 600px;
   background-image: url(./Images/HomeImage.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -103,8 +103,6 @@ body {
 
 
 
-
-
 .main {
   position: relative
 }
@@ -116,31 +114,18 @@ body {
   transform: translate(-50%, -50%);
   color: black;
   font-size: 600%;
-}
 
-
-.hero-text {
   text-shadow: 5px -10px 5px gray;
   font-weight: 800;
 }
 
-.l1 {
-  color: red;
-  font-size: 2em;
-  text-shadow: 10px -20px 5px pink;
-  font-weight: 800;
-}
+
 .container {
 width: 1200px;
 display: inline-grid;
 
 }
 
-section {
-  padding: 2em 0;
-  border-bottom: solid 1px #ccc;
-  margin-bottom: 4em;
-}
 .box1 {
   width: 400px;
   height: 100px;
@@ -150,7 +135,7 @@ section {
   flex-grow: initial;
 }
 .box2 {
-  width: 400px;
+ width: 400px;
   height: 100px;
   display: flex;
   justify-content: flex-end;
@@ -165,10 +150,6 @@ section {
   grid-column-gap: 50px;
   grid-row-gap: 10px;
 }
-
-
-
-
 
 #one {
 grid-column-start: 1;
