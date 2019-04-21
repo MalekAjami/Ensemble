@@ -1,5 +1,6 @@
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 html {
+
 box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -17,10 +18,11 @@ html {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+/* we apply hover here instead of (ul li :hover)
 
 #menu a:hover {
-  color: white;
-}
+
+}*/
 
 nav {
   text-decoration-style: none; /*delete the under line for links menu*/
@@ -46,6 +48,13 @@ ul li {
 
 }
 
+/* hover-transition for menu */
+ul li :hover {
+  background-color: indianred;
+ transition: background .5s ease-in;
+ color: white;
+}
+
 ul li a {
   color: #000;
   text-decoration: none;
@@ -55,13 +64,16 @@ ul li a {
   
 }
 
-/* hover-transition for menu */
-ul li :hover {
-  background-color: indianred;
- transition: background .5s ease-in;
 
+
+/* activate it to vew all the boxes
+body * {
+  border: 1px solid red;
 }
+*/
+
 body {
+  
   min-height: 600px;
   background-image: url(./Images/HomeImage.jpg);
   background-position: center;
@@ -73,7 +85,8 @@ body {
 
 .text-blur-out {
 	-webkit-animation: text-blur-out 2.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: text-blur-out 2.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+          animation: text-blur-out 2.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
 }
 
 /* ----------------------------------------------
@@ -102,7 +115,6 @@ body {
 }
 
 
-
 .main {
   position: relative
 }
@@ -121,27 +133,40 @@ body {
 
 
 .container {
+ 
 width: 1200px;
 display: inline-grid;
 
 }
 
 .box1 {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none; 
+  color: #000;
+  /*
+  flex-grow: initial;
   width: 400px;
   height: 100px;
-  display: flex;
   justify-content: flex-start;
-  align-items: center;
-  flex-grow: initial;
+  */
+
 }
 .box2 {
- width: 400px;
-  height: 100px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-grow: initial;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+height: 100px;
+border-radius: 10px;
+text-decoration-line: none; 
+color: #000;
+flex-grow: initial;
+ /* width: 400px;
+  */
 }
+
 
 .grid-container {
   display: grid;
@@ -150,6 +175,7 @@ display: inline-grid;
   grid-column-gap: 50px;
   grid-row-gap: 10px;
 }
+
 
 #one {
 grid-column-start: 1;
@@ -186,7 +212,15 @@ grid-column-start: 3;
 grid-column-end: 4;
 }
 
-
+/* _______-this for testing________*/
+/*figure {
+  flex: 2;
+  margin: auto; /* just a centering in case it's not 100% ... */
+/*}
+#two img {
+  display: block;
+  width: 30%
+}
 
 
 /*Boxes animation*/
@@ -194,25 +228,42 @@ grid-column-end: 4;
 .c1 {
   position: relative;
   left: -100px;
-  animation: slide 0.5s forwards;
-  animation-delay: 2s;
+  animation: slide-1 0.9s forwards;
+  animation-delay: 1s;
   animation-direction: alternate;
+
+  /* to make transperancy with border  */
+background-color: indianred;  
+border: 1px solid black;
+opacity: 0.6;
+font-size: 30px;
 }
 
-@keyframes slide {
+@keyframes slide-1 {
   100% { left: 0; }
 }
 
-/*
+
 .c2 {
-  position: absolute;
-  right: 100px;
-  animation: slide 0.5s forwards;
-  animation-delay: 2s;
+  position: relative;
+  right: 0px;
+  animation: slide-2 0.9s forwards;
+  animation-delay: 1s;
+  animation-direction: reverse;
+
+  /* to make transperancy with border */
+  background-color: indianred;
+border: 1px solid black;
+opacity: 0.6;
+font-size: 30px;
 }
 
-@keyframes slide {
-  100% { right: 0; }
+@keyframes slide-2 {
+  100% { right: -100px; }
 }
 
-/*
+section div :hover {
+  background-color: #ad2b24;
+  color: white;
+ transition: background .6s ease-in;
+}
