@@ -31,15 +31,27 @@
     <span class="icon-twitter"></span>
     <span class="icon-joomla"></span>
 
-    <nav id="box">
-        <ul id="menu">
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="groups.html">Groups</a></li>
-            <li><a href="#">Members</a></li>
-            <li><a href="#">Donation</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="topnav" id="box">
+            <a class="active" href="index.html">Home</a>
+            <a href="groups.html">Groups</a>
+            <a href="#">Members</a>
+            <a href="#">Donation</a>
+            <a href="contact.html" id="contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+    </div>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("box");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>    
 
     <main>
         <h1 class="hero-text text-blur-out">
