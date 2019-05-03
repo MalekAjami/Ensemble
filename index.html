@@ -18,12 +18,18 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <!--responsive in scripts-->
+
+    <link rel="" href="scripts.js" color="">
+
 
 </head>
 
 
 
 <body>
+    
+  <div id="matterhorn">
     <span class="icon-menu"></span>
     <span class="icon-home"></span>
     <span class="icon-phone"></span>
@@ -31,29 +37,19 @@
     <span class="icon-twitter"></span>
     <span class="icon-joomla"></span>
 
+   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <div class="topnav" id="box">
-            <a class="active" href="index.html">Home</a>
-            <a href="groups.html">Groups</a>
-            <a href="#">Members</a>
-            <a href="#">Donation</a>
-            <a href="contact.html" id="contact">Contact</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+        <a class="active" href="index.html">Home</a>
+        <a href="groups.html">Groups</a>
+        <a href="#">Members</a>
+        <a href="#">Donation</a>
+        <a href="contact.html" id="contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars icon-menu"></i>
+        </a>
     </div>
 
-    <script>
-        function myFunction() {
-          var x = document.getElementById("box");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
-        }
-    </script>    
 
-    <main>
         <h1 class="hero-text text-blur-out">
             ENSEMBLE
         </h1>
@@ -74,8 +70,39 @@
         </section>
 
 
-    </main>
+
+  </div>   
+
+
+
+<!-- START MAIN -->
+<main id="main">
+
+    <!-- START MAIN HEADER -->
+    <header class="main-header AC">
+
+      <figure class="header-figure DF"><i class="icon fa-bar-chart-o"></i></figure>
+
+
+      <div class="content">
+        <h2>
+          As this is my <strong>twentieth</strong> freebie for HTML5 UP
+          <br>
+          I decided to give it a really creative name.
+        </h2>
+        <p>
+          Turns out <strong>Twenty</strong> was the best I could come up with. Anyway, lame name aside,
+          <br>
+          it's minimally designed, fully responsive, built on HTML5/CSS3/<strong>skel</strong>,
+          and, like all my stuff,
+          <br>
+          released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0</a> license. Have fun!
+        </p>
+      </div>
+
+    </header>
+    <!-- END MAIN HEADER -->
+</main>
 
 </body>
-
 </html>
