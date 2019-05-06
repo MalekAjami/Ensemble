@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ensemble</title>
-    <link rel="stylesheet" href="CSS.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="icomoon/style.css">
 
     <!-- my icons-->
@@ -18,12 +18,18 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <!--responsive in scripts-->
+
+    <script src="JS/scripts.js"></script>
+
 
 </head>
 
 
 
 <body>
+    
+  <div id="matterhorn">
     <span class="icon-menu"></span>
     <span class="icon-home"></span>
     <span class="icon-phone"></span>
@@ -31,17 +37,19 @@
     <span class="icon-twitter"></span>
     <span class="icon-joomla"></span>
 
-    <nav >
-        <ul id="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="groups.html">Groups</a></li>
-            <li><a href="#">Members</a></li>
-            <li><a href="#">Donation</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <div class="topnav" id="box">
+        <a href="index.html">Home</a>
+        <a class="active" href="groups.html">Groups</a>
+        <a href="#">Members</a>
+        <a href="#">Donation</a>
+        <a href="contact.html" id="contact">Contact</a>
+        <a href="javascript:void(0);" class="icon icon-menu" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
 
-    <main>
+
         <h1 class="hero-text text-blur-out">
             ENSEMBLE
         </h1>
@@ -49,21 +57,52 @@
         <section>
 
             <div class="grid-container">
-                <div class="box1 c1" id="one">Study Corner</div>
-                <div class="box2 c2" id="two">Journeys Corner</div>
-                <div class="box1 c1" id="three">Sport Corner</div>
-                <div class="box2 c2" id="four">Public relations Corner</div>
-                <div class="box1 c1" id="five">Lawyer Corner</div>
-                <div class="box2 c2" id="six">Activities Corner</div>
-                <div class="box1 c1" id="seven">Advertising Corner</div>
-                <div class="box2 c2" id="eight">job Corner</div>
+                <a href="#" class="box1 c1" id="one">Study Corner</a>
+                <a href="#" class="box2 c2" id="two">Journeys Corner</a>
+                <a href="#" class="box1 c1" id="three">Sport Corner</a>
+                <a href="#" class="box2 c2" id="four">Public relations Corner</a>
+                <a href="#" class="box1 c1" id="five">Lawyer Corner</a>
+                <a href="#" class="box2 c2" id="six">Activities Corner</a>
+                <a href="#" class="box1 c1" id="seven">Advertising Corner</a>
+                <a href="#" class="box2 c2" id="eight">job Corner</a>
             </div>
 
         </section>
 
 
-    </main>
+
+  </div>   
+
+
+
+<!-- START MAIN -->
+<main id="main">
+
+    <!-- START MAIN HEADER -->
+    <header class="main-header AC">
+
+      <figure class="header-figure DF"><i class="icon fa-bar-chart-o"></i></figure>
+
+
+      <div class="content">
+        <h2>
+          As this is my <strong>twentieth</strong> freebie for HTML5 UP
+          <br>
+          I decided to give it a really creative name.
+        </h2>
+        <p>
+          Turns out <strong>Twenty</strong> was the best I could come up with. Anyway, lame name aside,
+          <br>
+          it's minimally designed, fully responsive, built on HTML5/CSS3/<strong>skel</strong>,
+          and, like all my stuff,
+          <br>
+          released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0</a> license. Have fun!
+        </p>
+      </div>
+
+    </header>
+    <!-- END MAIN HEADER -->
+</main>
 
 </body>
-
 </html>
