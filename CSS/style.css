@@ -4,12 +4,14 @@ html {
 box-sizing: border-box;
 }
 *, *:before, *:after {
-box-sizing: inherit;
+box-sizing: content-box;
 }
 
 html {
   scroll-behavior: smooth;
 }
+
+
 
 
 /* ______________________________________ */
@@ -85,7 +87,7 @@ body * {
 
 .container {
  
-width: 1200px;
+width: 100%;
 display: inline-grid;
 
 }
@@ -189,7 +191,7 @@ grid-column-end: 4;
 background-color: indianred;  
 border: 1px solid black;
 opacity: 0.6;
-font-size: 150%;
+font-size: 4vw;
 }
 
 @keyframes slide-1 {
@@ -208,7 +210,7 @@ font-size: 150%;
 background-color: indianred;
 border: 1px solid black;
 opacity: 0.6;
-font-size: 150%;
+font-size: 4vw;
 }
 
 @keyframes slide-2 {
@@ -238,8 +240,7 @@ section div :hover {
       display: inline-block;
       color: black;
       text-align: center;
-      font-size: 10px;
-      font-size: 2vw;
+      font-size: 2.5vw;
 
       text-decoration: none;
       padding: 16px 20px;
@@ -294,70 +295,12 @@ section div :hover {
 
 
   
-    /* this for contact page */
-    * {
-      box-sizing: border-box;
-    }
+    /* ______this for contact page_______ */
     
-    input[type=text], select, textarea {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      resize: vertical;
-    }
-    
-    label {
-      padding: 12px 12px 12px 0;
-      display: inline-block;
-    }
-    
-    input[type=submit] {
-      background-color: #4CAF50;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      float: right;
-    }
-    
-    input[type=submit]:hover {
-      background-color: #45a049;
-    }
-    
-    .container {
-      border-radius: 5px;
-      background-color: #f2f2f2;
-      padding: 20px;
-    }
-    
-    .col-25 {
-      float: left;
-      width: 25%;
-      margin-top: 6px;
-    }
-    
-    .col-75 {
-      float: left;
-      width: 75%;
-      margin-top: 6px;
-    }
-    
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
+
     
     /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-      .col-25, .col-75, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-      }
-    }
+ 
 
      /* box close */
      #closeButton {
@@ -395,7 +338,7 @@ section div :hover {
       /* CONTENT HEADER WITH ICON FIGURE
 ----------------------------------------------*/
 h2 {
-  font-size: 150%;
+  font-size: 2vw;
 }
 .icon1 {
   font-size: 100px;
@@ -442,29 +385,10 @@ h2 {
 
 }
 
-/* ______contact test_______*/
+/* ______contact page_______*/
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 
-* {
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-font-smoothing:antialiased;
-	-moz-font-smoothing:antialiased;
-	-o-font-smoothing:antialiased;
-	font-smoothing:antialiased;
-	text-rendering:optimizeLegibility;
-}
-
-body {
-	font-family:"Open Sans", Helvetica, Arial, sans-serif;
-	font-weight:300;
-	font-size: 18px;
-	line-height:30px;
-}
 
 .container1 {
 	max-width:400px;
@@ -475,23 +399,18 @@ body {
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
 
-/* #contact {
-	background:#F9F9F9;
-	padding:25px;
-	margin:50px 0;
-} */
 
 #contact h3 {
 	color: #F96;
 	display: block;
-	font-size: 30px;
+	font-size: 3vw;
 	font-weight: 400;
 }
 
 #contact h4 {
 	margin:5px 0 15px;
 	display:block;
-	font-size:13px;
+	font-size: 3vw;
 }
 
 fieldset {
@@ -511,12 +430,6 @@ fieldset {
 
 }
 
-/* #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
-	-webkit-transition:border-color 0.3s ease-in-out;
-	-moz-transition:border-color 0.3s ease-in-out;
-	transition:border-color 0.3s ease-in-out;
-	border:1px solid #AAA;
-} */
 
 #contact textarea {
 	height:100px;
@@ -524,23 +437,6 @@ fieldset {
   resize:none;
 }
 
-/* #contact button[type="submit"] {
-	cursor:pointer;
-	width:100%;
-	border:none;
-	background: indianred;
-	color:#FFF;
-	margin:0 0 5px;
-	padding:10px;
-	font-size:15px;
-} */
-
-/* #contact button[type="submit"]:hover {
-	background:indianred;
-	-webkit-transition:background 0.3s ease-in-out;
-	-moz-transition:background 0.3s ease-in-out;
-	transition:background-color 0.3s ease-in-out;
-} */
 
 #contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
 
