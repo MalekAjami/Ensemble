@@ -1,9 +1,16 @@
-//Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon 
-function myFunction() {
-  var x = document.getElementById("box");
-  if (x.className === "topnav") {
-    x.className += " responsive";
+$('.navTrigger').click(function () {
+  $(this).toggleClass('active');
+  $("#mainListDiv").toggleClass("show_list");
+  $("#mainListDiv").fadeIn();
+
+});
+
+
+//  Function used to shrink nav bar removing paddings and adding black background
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+      $('.nav').addClass('affix');
   } else {
-    x.className = "topnav";
+      $('.nav').removeClass('affix');
   }
-}
+});

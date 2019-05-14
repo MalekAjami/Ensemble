@@ -1,174 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ensemble</title>
+
+  
   <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="icomoon/style.css">
-
-  <!-- my icons-->
-  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-  <link rel="manifest" href="favicons/site.webmanifest">
-  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-
-  <!--responsive in scripts-->
-
-  <script src="JS/scripts.js"></script>
-
-
 </head>
-
-
-
 <body>
-
-  <div id="matterhorn">
-    <span class="icon-menu"></span>
-    <span class="icon-home"></span>
-    <span class="icon-phone"></span>
-    <span class="icon-facebook2"></span>
-    <span class="icon-twitter"></span>
-    <span class="icon-joomla"></span>
-
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <div class="topnav" id="box">
-      <a class="active" href="index.html">Home</a>
-      <a href="groups.html">Groups</a>
-      <a href="#">Members</a>
-      <a href="#">Donation</a>
-      <a href="contact.html" id="contact">Contact</a>
-      <a href="javascript:void(0);" class="icon icon-menu" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
+  
+  <nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <a href="#">Ensemble</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Groups</a></li>
+                <li><a href="#">Members</a></li>
+                <li><a href="#">Donation</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
     </div>
+</nav>
 
+<section class="home">
+</section>
+<div style="height: 1000px">
+    <!-- just to make scrolling effect possible -->
 
-    <h1 class="hero-text text-blur-out">
-      ENSEMBLE
-    </h1>
+    
+  <h2 class="myH2">What is this ?</h2>
+  <p class="myP">This is a responsive fixed navbar animated on scroll</p>
+  <p class="myP">I took inspiration from  ABDO STEIF (<a href="Ensemble">Ensemble</a>)
+  and Dicson <a href="Ensemble">Ensemble</a></p>
+  <p class="myP">I HOPE YOU FIND THIS USEFULL</p>
+  <p class="myP">Albi</p>
+    <p class="myP">
+    
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+  </p>
+</div>
 
-    <section>
+<!-- Jquery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-      <div class="grid-container">
-        <a href="#" class="box1 c1" id="one">Study Corner</a>
-        <a href="#" class="box2 c2" id="two">Translate Corner</a>
-        <a href="#" class="box1 c1" id="three">Sport Corner</a>
-        <a href="#" class="box2 c2" id="four">Public relations Corner</a>
-        <a href="#" class="box1 c1" id="five">Lawyer Corner</a>
-        <a href="#" class="box2 c2" id="six">Activities Corner</a>
-        <a href="#" class="box1 c1" id="seven">Advertising Corner</a>
-        <a href="#" class="box2 c2" id="eight">job Corner</a>
-      </div>
-
-    </section>
-
-
-
-  </div>
-
-
-
-  <!-- START MAIN -->
-  <main id="main">
-
-    <!-- START MAIN HEADER -->
-    <header class="main-header">
-
-      <figure class="header-figure DF"><i class="icon1 fa-bar-chart-o"></i></figure>
-
-      <div class="content">
-        <h2>
-          Under the name "Ensemble" (Together), in accordance with Article 60 et seq. Of the Swiss Civil Law, a
-          non-profit cultural and social association with headquarters in Neuchâtel is established.<br>
-
-          The actions of the association will be conducted in a social and cultural context. <br>
-
-          The association does not tolerate any discrimination for geographical, racial or religious affiliation.
-
-        </h2>
-
-      </div>
-
-    </header>
-
-    <header class="main-header">
-
-      <figure class="header-figure DF"><i class="icon1 fa-bar-chart-o"></i></figure>
-
-      <div class="content">
-        <h2>
-
-          Goals of the association
-          <ul>
-            <li>Facilitate the integration of individuals into society by promoting their rights and obligations,
-              promoting social and cultural activities, and improving language and professional skills.</li>
-            <li>Support and encourage activities to improve the situation of its members.</li>
-            <li>Cooperate with institutes, organizations and individuals in Switzerland that can help it achieve its
-              goals.</li>
-            <li>To show a radiant and honourable image of the Syrians.</li>
-            <li>Build bridges of dialogue and create positive relationships with all components of Swiss society.</li>
-          </ul>
-
-
-        </h2>
-        <p>
-          Turns out <strong>Twenty</strong> was the best I could come up with. Anyway, lame name aside,
-          <br>
-          it's minimally designed, fully responsive, built on HTML5/CSS3/<strong>skel</strong>,
-          and, like all my stuff,
-          <br>
-          released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0</a> license.
-          Have fun!
-        </p>
-      </div>
-
-    </header>
-
-    <header class="main-header">
-
-      <figure class="header-figure DF"><i class="icon1 fa-bar-chart-o"></i></figure>
-
-      <div class="content">
-        <h2>
-
-          Goals of the association
-          <ul>
-            <li>Facilitate the integration of individuals into society by promoting their rights and obligations,
-              promoting social and cultural activities, and improving language and professional skills.</li>
-            <li>Support and encourage activities to improve the situation of its members.</li>
-            <li>Cooperate with institutes, organizations and individuals in Switzerland that can help it achieve its
-              goals.</li>
-            <li>To show a radiant and honourable image of the Syrians.</li>
-            <li>Build bridges of dialogue and create positive relationships with all components of Swiss society.</li>
-          </ul>
-
-
-        </h2>
-        <p>
-          Turns out <strong>Twenty</strong> was the best I could come up with. Anyway, lame name aside,
-          <br>
-          it's minimally designed, fully responsive, built on HTML5/CSS3/<strong>skel</strong>,
-          and, like all my stuff,
-          <br>
-          released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0</a> license.
-          Have fun!
-        </p>
-      </div>
-
-    </header>
-    <!-- END MAIN HEADER -->
-  </main>
-
-
-
+<script src="JS/scripts.js"></script>
 
 </body>
-
 </html>
