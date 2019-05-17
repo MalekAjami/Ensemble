@@ -23,3 +23,8 @@ $(function() {
   });
 });
 
+$('right-side').on('mouseover',function(){
+  window.setTimeout(function(){
+      $this.addClass('onesecond');
+  }, 1000); //<-- Delay in milliseconds
+   });
