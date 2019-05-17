@@ -1,101 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Ensemble</title>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  
+
+ <link rel="stylesheet" href="./CSS/swiper.min.css">
 
 
-  <link rel="stylesheet" href="CSS/style.css">
+  <!-- Demo styles -->
+  <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
 </head>
-
 <body>
+  
 
-  <nav class="nav">
-    <div class="container">
-      <div class="logo">
-        <a href="#">Ensemble</a>
-      </div>
-      <div id="mainListDiv" class="main_list">
-        <ul class="navlinks">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Groups</a></li>
-          <li><a href="#">Members</a></li>
-          <li><a href="#">Donation</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <span class="navTrigger">
-        <i></i>
-        <i></i>
-        <i></i>
-      </span>
-    </div>
-  </nav>
+  <!-- Swiper JS -->
+  <script src="../dist/js/swiper.min.js"></script>
 
-  <section>
-  </section>
-  <div style="height: 1000px">
+  <!-- Initialize Swiper -->
+  <script src="./JS/swiper.js"></script>
 
+  <script>
 
-    <!-- for slide show -->
-    <div class="slideshow-container" class="home">
-
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="Images/HOME1.jpeg">
-        <div class="text">Caption Text</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="Images/HOME2.jpeg">
-        <div class="text">Caption Two</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="Images/HOME3.jpeg">
-        <div class="text">Caption Three</div>
-      </div>
-
-    </div>
-    <br>
-
-    <div style="text-align:center">
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-
-    <!-- just to make scrolling effect possible -->
-
-
-    <h2 class="myH2">What is this ?</h2>
-    <p class="myP">this is new one</p>
-    <p class="myP">it's very nice (<a href="Ensemble">Ensemble</a>)
-      and Dicson <a href="Ensemble">Ensemble</a></p>
-    <p class="myP">I HOPE YOU FIND THIS USEFULL</p>
-    <p class="myP">Albi</p>
-    <p class="myP">
-
-      Under the name "Ensemble" (Together), in accordance with Article 60 et seq. Of the Swiss Civil Law, a
-      non-profit cultural and social association with headquarters in Neuchâtel is established.<br>
-
-      The actions of the association will be conducted in a social and cultural context. <br>
-
-      The association does not tolerate any discrimination for geographical, racial or religious affiliation.
-
-    </p>
-  </div>
-
-  <!-- Jquery needed -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-  <script src="JS/scripts.js"></script>
-
+  </script>
 </body>
-
 </html>

@@ -28,3 +28,22 @@ $('right-side').on('mouseover',function(){
       $this.addClass('onesecond');
   }, 1000); //<-- Delay in milliseconds
    });
+
+
+   // SWIPER slide animation
+   var swiper = new Swiper('.swiper-container', {
+    spaceBetween: 100,
+    centeredSlides: true,
+    autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: false,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });

@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="CSS/reset.css">
   <link rel="stylesheet" href="CSS/animation.css">
   <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="./CSS/swiper.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
@@ -18,7 +19,6 @@
 </head>
 
 <body>
-
   <nav class="nav">
     <div class="container">
       <div class="logo">
@@ -42,8 +42,38 @@
     </div>
   </nav>
 
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="Images/HOME1.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="Images/HOME4.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="Images/HOME3.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="Images/HOME5.jpg" alt=""></div>
+      <div class="swiper-slide">
+        <section class="home"></section>
+      </div>
+    </div>
 
-  <section class="home section" id="section07">
+    <div class="more-btn">
+    </div>
+
+    <!--<div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide">Slide 10</div>
+    </div>
+    <!-Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+
+
+  <section>
     <div class="hero-text">
       <h1>You Are Welcome</h1>
       <h2>
@@ -55,58 +85,53 @@
       <h3> ― Henry Ford</h3>
     </div>
   </section>
+
   <!-- scroll down button -->
   <section id="section07" class="demo">
-    <a href="#section08"><span></span><span></span><span></span>More</a>
+    <a href="#section08" id="moreBtn"><span></span><span></span><span></span>More</a>
   </section>
 
 
-  </section>
-  <div class="div1" id="section08" class="demo">
+  <!-- just to make scrolling effect possible -->
 
-    <!-- just to make scrolling effect possible -->
+  <main class="main" id="section08">
+    <div class="rapper">
+      <div class="left-side">
+        <h2>What is this ?</h2>
+        <p>this is new one</p>
+        <p>it's very nice (<a href="Ensemble">Ensemble</a>)
+          and Dicson <a href="Ensemble">Ensemble</a></p>
+        <p>I HOPE YOU FIND THIS USEFULL</p>
+        <p>Albi</p>
+        <p>
 
-    <main class="main">
-      <div class="rapper">
-        <div class="left-side">
-          <h2>What is this ?</h2>
-          <p>this is new one</p>
-          <p>it's very nice (<a href="Ensemble">Ensemble</a>)
-            and Dicson <a href="Ensemble">Ensemble</a></p>
-          <p>I HOPE YOU FIND THIS USEFULL</p>
-          <p>Albi</p>
-          <p>
+          Under the name "Ensemble" (Together), in accordance with Article 60 et seq. Of the Swiss Civil Law, a
+          non-profit cultural and social association with headquarters in Neuchâtel is established.<br>
 
-            Under the name "Ensemble" (Together), in accordance with Article 60 et seq. Of the Swiss Civil Law, a
-            non-profit cultural and social association with headquarters in Neuchâtel is established.<br>
+          The actions of the association will be conducted in a social and cultural context. <br>
 
-            The actions of the association will be conducted in a social and cultural context. <br>
+          The association does not tolerate any discrimination for geographical, racial or religious affiliation.
 
-            The association does not tolerate any discrimination for geographical, racial or religious affiliation.
-
-          </p>
-        </div>
-        <div class="center-side"></div>
-        <div class="right-side">
-        </div>
+        </p>
       </div>
-  </div>
-  
+      <div class="center-side"></div>
+      <div class="right-side"></div>
+    </div>
   </main>
-    <!-- scroll down button -->
-    <section id="section07" class="demo">
-        <a href="#section08"><span></span><span></span><span></span>More</a>
-      </section>
-  
-  <footer class="raper">
+
+  </div>
+
+
+
+  <footer>
     <a href="#"><i class="fab fa-facebook"></i></a>
     <a href="#"><i class="fas fa-mobile-alt"></i></a>
   </footer>
   <!-- Jquery needed -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
+  <script src="./JS/swiper.min.js"></script>
   <script src="JS/scripts.js"></script>
-
 </body>
 
 </html>

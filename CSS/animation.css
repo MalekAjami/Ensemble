@@ -1,6 +1,18 @@
 /* Animation */
 
 .navTrigger {
+  display: none;
+}
+
+.nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+
+.navTrigger {
   cursor: pointer;
   width: 30px;
   height: 25px;
@@ -187,4 +199,9 @@
   100% {
       transform: translateY(-9px) rotate(135deg);
   }
+}
+
+.affix {
+  padding: 0;
+  background-color: #111;
 }
